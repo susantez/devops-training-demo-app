@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping(value = "/training/v1")
 public interface BookController {
 
-    @GetMapping(value = "/book/all")
+    @GetMapping(value = "/book")
     ResponseEntity<List<BookDto>> findAll();
 
     @GetMapping(value = "/book/{title}")
